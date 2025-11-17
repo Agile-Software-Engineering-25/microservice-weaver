@@ -25,22 +25,65 @@ const ServiceFlowCanvas = ({ services }: ServiceFlowCanvasProps) => {
   useEffect(() => {
     if (services.length > 0) {
       const { nodes: initialNodes, edges: initialEdges } = createNodesAndEdges(services);
-      const { nodes: layoutedNodes, edges: layoutedEdges } = getLayoutedElements(
-        initialNodes,
-        initialEdges
-      );
       
-      setNodes(layoutedNodes);
-      setEdges(layoutedEdges);
+      // Only apply dagre layout if no positions are predefined
+      const hasPositions = services.some(s => s.position);
+      if (hasPositions) {
+        setNodes(initialNodes);
+        setEdges(initialEdges);
+      } else {
+        const { nodes: layoutedNodes, edges: layoutedEdges } = getLayoutedElements(
+          initialNodes,
+          initialEdges
+        );
+        setNodes(layoutedNodes);
+        setEdges(layoutedEdges);
+      }
     }
   }, [services, setNodes, setEdges]);
+
+  const handleNodesChange = useCallback((changes: any) => {
+    onNodesChange(changes);
+    
+    // Check if any change is a position change (drag end)
+    const hasPositionChange = changes.some((change: any) => 
+      change.type === 'position' && change.dragging === false
+    );
+    
+    if (hasPositionChange) {
+      // Get current nodes after the change
+      setNodes((currentNodes) => {
+        // Create updated services JSON with new positions
+        const updatedServices = services.map(service => {
+          const nodeId = `${service.team}-${service.type || 'null'}`;
+          const node = currentNodes.find(n => n.id === nodeId);
+          
+          if (node) {
+            return {
+              ...service,
+              position: {
+                x: Math.round(node.position.x),
+                y: Math.round(node.position.y)
+              }
+            };
+          }
+          return service;
+        });
+        
+        console.log('Updated Services JSON with positions:');
+        console.log(JSON.stringify(updatedServices, null, 2));
+        
+        return currentNodes;
+      });
+    }
+  }, [onNodesChange, services, setNodes]);
 
   return (
     <div className="w-full h-full">
       <ReactFlow
         nodes={nodes}
         edges={edges}
-        onNodesChange={onNodesChange}
+        onNodesChange={handleNodesChange}
         onEdgesChange={onEdgesChange}
         nodeTypes={nodeTypes}
         fitView
