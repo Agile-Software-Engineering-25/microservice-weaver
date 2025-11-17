@@ -28,7 +28,7 @@ export const createNodesAndEdges = (services: Service[]) => {
         repository: service.reposiory,
         type: service.type || 'Unknown',
       },
-      position: { x: 0, y: 0 }, // Will be set by dagre
+      position: service.position || { x: 0, y: 0 }, // Use stored position if available
       style: {
         background: nodeColor,
         color: '#ffffff',

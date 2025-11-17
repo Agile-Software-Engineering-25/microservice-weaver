@@ -14,4 +14,5 @@ export interface Service {
   type: "frontend" | "backend" | null;
   reposiory: string;
   connetions: Connection[];
+  position?: { x: number; y: number };
 }
