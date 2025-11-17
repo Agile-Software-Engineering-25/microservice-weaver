@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState, useMemo } from 'react';
 import ReactFlow, {
   MiniMap,
   Controls,
@@ -9,6 +9,7 @@ import ReactFlow, {
 } from 'reactflow';
 import 'reactflow/dist/style.css';
 import { Service } from '@/types/service';
+import CustomServiceNode from '@/components/CustomServiceNode';
 import { createNodesAndEdges } from '@/utils/flowUtils';
 import { getLayoutedElements } from '@/utils/layoutUtils';
 
@@ -17,6 +18,7 @@ interface ServiceFlowCanvasProps {
 }
 
 const ServiceFlowCanvas = ({ services }: ServiceFlowCanvasProps) => {
+  const nodeTypes = useMemo(() => ({ custom: CustomServiceNode }), []);
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
 
@@ -40,6 +42,7 @@ const ServiceFlowCanvas = ({ services }: ServiceFlowCanvasProps) => {
         edges={edges}
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
+        nodeTypes={nodeTypes}
         fitView
         attributionPosition="bottom-left"
       >

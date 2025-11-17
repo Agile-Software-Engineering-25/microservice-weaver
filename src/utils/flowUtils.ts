@@ -22,15 +22,11 @@ export const createNodesAndEdges = (services: Service[]) => {
 
     nodes.push({
       id: `${service.team}-${service.type || 'null'}`,
-      type: 'default',
+      type: 'custom',
       data: {
-        label: (
-          <div className="text-center">
-            <div className="font-semibold text-sm">Team {service.team}</div>
-            <div className="text-xs opacity-80 mt-1">{service.reposiory}</div>
-            <div className="text-xs opacity-60 mt-1 capitalize">{service.type || 'Unknown'}</div>
-          </div>
-        ),
+        team: service.team,
+        repository: service.reposiory,
+        type: service.type || 'Unknown',
       },
       position: { x: 0, y: 0 }, // Will be set by dagre
       style: {
@@ -62,9 +58,6 @@ export const createNodesAndEdges = (services: Service[]) => {
           labelStyle: { 
             fill: 'hsl(var(--foreground))', 
             fontSize: 10,
-            background: 'hsl(var(--card))',
-            padding: '4px 8px',
-            borderRadius: '4px',
           },
           labelBgStyle: { 
             fill: 'hsl(var(--card))', 
