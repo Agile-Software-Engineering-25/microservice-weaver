@@ -5,6 +5,7 @@ import {Service} from '@/types/service';
 import {exampleData} from '@/data/exampleData';
 import {Info} from 'lucide-react';
 import {Card} from '@/components/ui/card';
+import favicon from "/favicon.png";
 
 const Index = () => {
   const [services, setServices] = useState<Service[]>([]);
@@ -37,7 +38,7 @@ const Index = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <img src={"/favicon.png"} alt="Logo" className="w-14 h-14"/>
+              <img src={favicon} alt="Logo" className="w-14 h-14"/>
               <div>
                 <h1 className="text-2xl font-bold">Microservice Architecture Visualizer</h1>
                 <p className="text-sm text-muted-foreground">
