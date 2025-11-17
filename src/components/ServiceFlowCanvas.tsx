@@ -21,6 +21,7 @@ const ServiceFlowCanvas = ({ services }: ServiceFlowCanvasProps) => {
   const nodeTypes = useMemo(() => ({ custom: CustomServiceNode }), []);
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
+  const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
 
   useEffect(() => {
     if (services.length > 0) {
@@ -40,7 +41,43 @@ const ServiceFlowCanvas = ({ services }: ServiceFlowCanvasProps) => {
         setEdges(layoutedEdges);
       }
     }
+    setSelectedNodeId(null); // Reset selected node when services change
   }, [services, setNodes, setEdges]);
+
+  const onNodeClick = useCallback((_event: React.MouseEvent, node: any) => {
+    setSelectedNodeId((prevId) => (prevId === node.id ? null : node.id));
+  }, []);
+
+  useEffect(() => {
+    setEdges((eds) =>
+      eds.map((edge) => {
+        const isOutgoing = selectedNodeId && edge.source === selectedNodeId;
+        const isIncomming = selectedNodeId && edge.target === selectedNodeId;
+        const isConnected = isOutgoing || isIncomming;
+
+        let strokeColor = 'hsl(var(--edges))';
+        if (isOutgoing) {
+          strokeColor = 'hsl(10, 80%, 60%)'; // Incoming requests in warm orange-red
+        } else if (isIncomming) {
+          strokeColor = 'hsl(210, 80%, 60%)'; // Outgoing requests in medium sky blue
+        } else if (selectedNodeId) {
+          // If a node is selected but this edge is not connected to it
+          strokeColor = 'hsl(var(--edges))';
+        }
+
+        return {
+          ...edge,
+          animated: isConnected,
+          style: {
+            ...edge.style,
+            strokeWidth: isConnected ? 3 : 1,
+            stroke: strokeColor,
+            opacity: selectedNodeId && !isConnected ? 0.3 : 1,
+          },
+        };
+      })
+    );
+  }, [selectedNodeId, setEdges]);
 
   const handleNodesChange = useCallback((changes: any) => {
     onNodesChange(changes);
@@ -85,6 +122,7 @@ const ServiceFlowCanvas = ({ services }: ServiceFlowCanvasProps) => {
         edges={edges}
         onNodesChange={handleNodesChange}
         onEdgesChange={onEdgesChange}
+        onNodeClick={onNodeClick}
         nodeTypes={nodeTypes}
         fitView
         attributionPosition="bottom-left"

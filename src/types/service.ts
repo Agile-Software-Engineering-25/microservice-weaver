@@ -11,7 +11,7 @@ export interface Connection {
 
 export interface Service {
   team: number;
-  type: "frontend" | "backend" | null;
+  type: "frontend" | "backend" | null | "infra";
   reposiory: string;
   connetions: Connection[];
   position?: { x: number; y: number };

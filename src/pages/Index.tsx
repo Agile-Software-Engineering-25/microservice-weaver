@@ -3,7 +3,7 @@ import ServiceFlowCanvas from '@/components/ServiceFlowCanvas';
 import JsonInput from '@/components/JsonInput';
 import {Service} from '@/types/service';
 import {exampleData} from '@/data/exampleData';
-import {Info, Network} from 'lucide-react';
+import {Info} from 'lucide-react';
 import {Card} from '@/components/ui/card';
 
 const Index = () => {
@@ -37,7 +37,7 @@ const Index = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <Network className="w-8 h-8 text-primary"/>
+              <img src={"/favicon.png"} alt="Logo" className="w-14 h-14"/>
               <div>
                 <h1 className="text-2xl font-bold">Microservice Architecture Visualizer</h1>
                 <p className="text-sm text-muted-foreground">
@@ -45,14 +45,6 @@ const Index = () => {
                 </p>
               </div>
             </div>
-            {services.length > 0 && (
-              <button
-                onClick={handleReset}
-                className="text-sm text-primary hover:underline"
-              >
-                Load New Data
-              </button>
-            )}
           </div>
         </div>
       </header>
