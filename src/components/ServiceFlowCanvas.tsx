@@ -118,6 +118,7 @@ const ServiceFlowCanvas = ({services}: ServiceFlowCanvasProps) => {
         onNodeClick={onNodeClick}
         nodeTypes={nodeTypes}
         fitView
+        minZoom={0.3}
         attributionPosition="bottom-left"
       >
         <Background variant={BackgroundVariant.Dots} gap={16} size={1} color="hsl(var(--border))"/>
