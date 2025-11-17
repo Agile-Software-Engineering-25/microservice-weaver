@@ -1,0 +1,3123 @@
+[
+  {
+    "team": 100,
+    "type": "backend",
+    "reposiory": "Brightsky Weather Backend (External)",
+    "connetions": [],
+    "position": {
+      "x": 359,
+      "y": 841
+    }
+  },
+  {
+    "team": 187,
+    "type": "frontend",
+    "reposiory": "frontend-template",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/brightsky/weather",
+        "description": "Fetch current weather data from Bright Sky API",
+        "file": "src/pages/Weather/Weather.tsx",
+        "line": 14,
+        "confidence": "high",
+        "team": 100,
+        "service_name": ""
+      }
+    ],
+    "position": {
+      "x": -16,
+      "y": 826
+    }
+  },
+  {
+    "team": 1,
+    "type": "frontend",
+    "reposiory": "team-01-room-booking-frontend",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/ase-1/room-mgmt/buildings",
+        "description": "Get all buildings for the Provadis complex",
+        "file": "src/pages/Building/Buildings.tsx",
+        "line": 26,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "GET",
+        "url": "/ase-1/room-mgmt/bookings",
+        "description": "Get all bookings",
+        "file": "src/pages/Booking/Bookings.tsx",
+        "line": 69,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "GET",
+        "url": "/ase-1/room-mgmt/rooms",
+        "description": "Get all known rooms",
+        "file": "src/pages/Booking/Bookings.tsx",
+        "line": 76,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "GET",
+        "url": "/ase-1/room-mgmt/buildings",
+        "description": "Get all buildings for the Provadis complex",
+        "file": "src/pages/Booking/Bookings.tsx",
+        "line": 83,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "GET",
+        "url": "/ase-1/room-mgmt/rooms",
+        "description": "Get all known rooms",
+        "file": "src/pages/Room/Rooms.tsx",
+        "line": 44,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "GET",
+        "url": "/ase-1/room-mgmt/buildings",
+        "description": "Get all buildings for the Provadis complex",
+        "file": "src/pages/Room/Rooms.tsx",
+        "line": 48,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "POST",
+        "url": "/ase-1/room-mgmt/buildings",
+        "description": "Create a new building in the Provadis complex",
+        "file": "src/components/Building/BuildingCreateDialog.tsx",
+        "line": 42,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "GET",
+        "url": "/ase-1/room-mgmt/buildings/{buildingId}/rooms",
+        "description": "Get all rooms in a building",
+        "file": "src/components/Building/BuildingCard.tsx",
+        "line": 24,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "GET",
+        "url": "/ase-1/room-mgmt/buildings/{buildingId}/rooms",
+        "description": "Get all rooms in a building",
+        "file": "src/components/Building/BuildingDeleteDialog.tsx",
+        "line": 37,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "DELETE",
+        "url": "/ase-1/room-mgmt/buildings/{buildingId}",
+        "description": "Delete building by ID.",
+        "file": "src/components/Building/BuildingDeleteDialog.tsx",
+        "line": 45,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "PUT",
+        "url": "/ase-1/room-mgmt/buildings/{buildingId}",
+        "description": "Updates an existing building by its ID.",
+        "file": "src/components/Building/BuildingEditDialog.tsx",
+        "line": 55,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "GET",
+        "url": "/ase-1/room-mgmt/rooms/{roomId}/deletable",
+        "description": "Checks whether a room can be deleted without force deleting.",
+        "file": "src/components/Room/RoomDeleteDialog.tsx",
+        "line": 44,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "DELETE",
+        "url": "/ase-1/room-mgmt/rooms/{roomId}",
+        "description": "Delete a specific room by ID",
+        "file": "src/components/Room/RoomDeleteDialog.tsx",
+        "line": 54,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "PUT",
+        "url": "/ase-1/room-mgmt/rooms/{roomId}",
+        "description": "Update a specific room by ID",
+        "file": "src/components/Room/RoomEditDialog.tsx",
+        "line": 135,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "GET",
+        "url": "/ase-1/room-mgmt/buildings",
+        "description": "Get all buildings for the Provadis complex",
+        "file": "src/components/Room/RoomEditDialog.tsx",
+        "line": 100,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "GET",
+        "url": "/ase-1/room-mgmt/rooms",
+        "description": "Get all known rooms",
+        "file": "src/components/Room/RoomEditDialog.tsx",
+        "line": 105,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "POST",
+        "url": "/ase-1/room-mgmt/rooms",
+        "description": "Create a new room",
+        "file": "src/components/Room/RoomCreateDialog.tsx",
+        "line": 101,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "GET",
+        "url": "/ase-1/room-mgmt/buildings",
+        "description": "Get all buildings for the Provadis complex",
+        "file": "src/components/Room/RoomCreateDialog.tsx",
+        "line": 85,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "GET",
+        "url": "/ase-1/room-mgmt/rooms",
+        "description": "Get all known rooms",
+        "file": "src/components/Room/RoomCreateDialog.tsx",
+        "line": 90,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 1,
+        "service_name": "room-mgmt"
+      }
+    ],
+    "position": {
+      "x": 604,
+      "y": -706
+    }
+  },
+  {
+    "team": 2,
+    "type": null,
+    "reposiory": "team-02",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/current_weather",
+        "description": "Get current weather",
+        "file": "src/hooks/useApi.ts",
+        "line": 13,
+        "confidence": "high",
+        "team": null,
+        "service_name": ""
+      }
+    ],
+    "position": {
+      "x": -280,
+      "y": -111
+    }
+  },
+  {
+    "team": 6,
+    "type": "backend",
+    "reposiory": "team-06-backend-antragsverfahren",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/team-11-api/api/v1/users",
+        "description": "Fetch all lecturers",
+        "file": "src/main/java/com/ase/userservice/services/StammdatenService.java",
+        "line": 40,
+        "confidence": "high",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": "GET",
+        "url": "/team-11-api/api/v1/users/{id}",
+        "description": "Fetch user information",
+        "file": "src/main/java/com/ase/userservice/services/StammdatenService.java",
+        "line": 57,
+        "confidence": "high",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": "GET",
+        "url": "/api/masterdata/studies/courseofstudies",
+        "description": "Fetch program information",
+        "file": "src/main/java/com/ase/userservice/services/StammdatenService.java",
+        "line": 74,
+        "confidence": "high",
+        "team": 9,
+        "service_name": "stammdaten-studieneinheiten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 6,
+        "service_name": "ase-antrag-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 9,
+        "service_name": "stammdaten-studieneinheiten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 8,
+        "service_name": "userservice"
+      }
+    ],
+    "position": {
+      "x": 1674,
+      "y": 83
+    }
+  },
+  {
+    "team": 6,
+    "type": "frontend",
+    "reposiory": "team-06-frontend-antragsverfahren",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/api/antrag/dozenten/names",
+        "description": "Fetch lecturer names",
+        "file": "src/hooks/useApiForm.ts",
+        "line": 14,
+        "confidence": "high",
+        "team": 6,
+        "service_name": "ase-antrag-service"
+      },
+      {
+        "method": "POST",
+        "url": "/api/antrag/nachklausur",
+        "description": "Submit late exam registration request",
+        "file": "src/hooks/useApiForm.ts",
+        "line": 22,
+        "confidence": "high",
+        "team": 6,
+        "service_name": "ase-antrag-service"
+      },
+      {
+        "method": "POST",
+        "url": "/api/antrag/bachelorarbeit",
+        "description": "Submit bachelor thesis registration",
+        "file": "src/hooks/useApiForm.ts",
+        "line": 35,
+        "confidence": "high",
+        "team": 6,
+        "service_name": "ase-antrag-service"
+      },
+      {
+        "method": "GET",
+        "url": "/api/antrag/studienbescheinigung",
+        "description": "Fetch certificate of enrollment",
+        "file": "src/hooks/useApiForm.ts",
+        "line": 46,
+        "confidence": "high",
+        "team": 6,
+        "service_name": "ase-antrag-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 6,
+        "service_name": "ase-antrag-service"
+      }
+    ],
+    "position": {
+      "x": 2080,
+      "y": 171
+    }
+  },
+  {
+    "team": 10,
+    "type": "infra",
+    "reposiory": "team-10-keycloak",
+    "connetions": [],
+    "position": {
+      "x": 934,
+      "y": 626
+    }
+  },
+  {
+    "team": 99,
+    "type": "backend",
+    "reposiory": "team-10-backend-manage-user",
+    "connetions": [
+      {
+        "method": "POST",
+        "url": "/notification-service/api/v1/emails",
+        "description": "Send initial credentials email",
+        "file": "src/main/java/com/ase/userservice/controllers/v1/CreateUserController.java",
+        "line": 10,
+        "confidence": "high",
+        "team": 15,
+        "service_name": "ase-notification-service"
+      },
+      {
+        "method": "GET",
+        "url": "/admin/realms/sau/users",
+        "description": "Get user data by username",
+        "file": "src/main/java/com/ase/userservice/components/UserManagment.java",
+        "line": 14,
+        "confidence": "high",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "POST",
+        "url": "/admin/realms/sau/users",
+        "description": "Create user",
+        "file": "src/main/java/com/ase/userservice/components/UserManagment.java",
+        "line": 26,
+        "confidence": "high",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "DELETE",
+        "url": "/admin/realms/sau/users/{id}",
+        "description": "Delete user",
+        "file": "src/main/java/com/ase/userservice/controllers/v1/DeleteUserController.java",
+        "line": 38,
+        "confidence": "high",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "POST",
+        "url": "/api/v1/messages/publish/User-Service/user:deletion",
+        "description": "Notify message broker about user deletion",
+        "file": "src/main/java/com/ase/userservice/controllers/v1/DeleteUserController.java",
+        "line": 58,
+        "confidence": "high",
+        "team": 50,
+        "service_name": "bitfrost-service"
+      },
+      {
+        "method": "POST",
+        "url": "/realms/sau/protocol/openid-connect/token",
+        "description": "Get Keycloak authentication token",
+        "file": "src/main/java/com/ase/userservice/components/GetToken.java",
+        "line": 42,
+        "confidence": "high",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "GET",
+        "url": "/admin/realms/sau/users/{userId}/groups",
+        "description": "Get user groups",
+        "file": "src/main/java/com/ase/userservice/components/UserResponseHelper.java",
+        "line": 125,
+        "confidence": "high",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "GET",
+        "url": "/admin/realms/sau/users/{userId}/role-mappings/realm",
+        "description": "Get user roles",
+        "file": "src/main/java/com/ase/userservice/components/UserResponseHelper.java",
+        "line": 162,
+        "confidence": "high",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 10,
+        "service_name": "user-api-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 50,
+        "service_name": "bitfrost-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 15,
+        "service_name": "ase-notification-service"
+      }
+    ],
+    "position": {
+      "x": 670,
+      "y": 421
+    }
+  },
+  {
+    "team": 50,
+    "type": "infra",
+    "reposiory": "Bitfröst-Backend-Service",
+    "connetions": [],
+    "position": {
+      "x": 2,
+      "y": 378
+    }
+  },
+  {
+    "team": 11,
+    "type": "backend",
+    "reposiory": "team-11-backend-stammdatenverwaltung",
+    "connetions": [
+      {
+        "method": "POST",
+        "url": "/userapi/api/v1/users",
+        "description": "Create a new user",
+        "file": "src/main/java/com/ase/stammdatenverwaltung/clients/KeycloakClient.java",
+        "line": 44,
+        "confidence": "high",
+        "team": 99,
+        "service_name": "user-api-service"
+      },
+      {
+        "method": "GET",
+        "url": "/userapi/api/v1/users/{id}",
+        "description": "Get user by id",
+        "file": "src/main/java/com/ase/stammdatenverwaltung/clients/KeycloakClient.java",
+        "line": 54,
+        "confidence": "high",
+        "team": 99,
+        "service_name": "user-api-service"
+      },
+      {
+        "method": "PUT",
+        "url": "/userapi/api/v1/users/{id}",
+        "description": "Update user by id",
+        "file": "src/main/java/com/ase/stammdatenverwaltung/clients/KeycloakClient.java",
+        "line": 65,
+        "confidence": "high",
+        "team": 99,
+        "service_name": "user-api-service"
+      },
+      {
+        "method": "DELETE",
+        "url": "/userapi/api/v1/users/{id}",
+        "description": "Delete user by id",
+        "file": "src/main/java/com/ase/stammdatenverwaltung/clients/KeycloakClient.java",
+        "line": 76,
+        "confidence": "high",
+        "team": 99,
+        "service_name": "user-api-service"
+      },
+      {
+        "method": "GET",
+        "url": "/bitfrost.sau-portal.de/api/notifications/send",
+        "description": "Send notification via Bitfrost",
+        "file": "src/main/java/com/ase/stammdatenverwaltung/services/BitfrostNotificationService.java",
+        "line": 34,
+        "confidence": "high",
+        "team": 50,
+        "service_name": "bitfrost-service"
+      },
+      {
+        "method": "POST",
+        "url": "/minio/profile-pictures",
+        "description": "Upload profile picture to MinIO",
+        "file": "src/main/java/com/ase/stammdatenverwaltung/services/MinIOService.java",
+        "line": 60,
+        "confidence": "high",
+        "team": 12,
+        "service_name": "minio"
+      },
+      {
+        "method": "GET",
+        "url": "/minio/profile-pictures/{filename}",
+        "description": "Get profile picture from MinIO",
+        "file": "src/main/java/com/ase/stammdatenverwaltung/services/MinIOService.java",
+        "line": 74,
+        "confidence": "high",
+        "team": 12,
+        "service_name": "minio"
+      },
+      {
+        "method": "DELETE",
+        "url": "/minio/profile-pictures/{filename}",
+        "description": "Delete profile picture from MinIO",
+        "file": "src/main/java/com/ase/stammdatenverwaltung/services/MinIOService.java",
+        "line": 88,
+        "confidence": "high",
+        "team": 12,
+        "service_name": "minio"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 50,
+        "service_name": "bitfrost-frontend-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 4,
+        "service_name": "minio"
+      }
+    ],
+    "position": {
+      "x": 428,
+      "y": 279
+    }
+  },
+  {
+    "team": 11,
+    "type": "frontend",
+    "reposiory": "team-11-frontend-personal-data",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/brightsky/weather",
+        "description": "Fetch weather data from Bright Sky API",
+        "file": "src/hooks/usePersonalData.ts",
+        "line": 14,
+        "confidence": "high",
+        "team": 100,
+        "service_name": "weather"
+      },
+      {
+        "method": "GET",
+        "url": "/team-11-api/api/personal-data",
+        "description": "Fetch personal data",
+        "file": "src/hooks/usePersonalData.ts",
+        "line": 21,
+        "confidence": "high",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": "PUT",
+        "url": "/team-11-api/api/personal-data",
+        "description": "Update personal data",
+        "file": "src/hooks/usePersonalData.ts",
+        "line": 44,
+        "confidence": "high",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      }
+    ],
+    "position": {
+      "x": 284,
+      "y": 517
+    }
+  },
+  {
+    "team": 11,
+    "type": "frontend",
+    "reposiory": "team-11-frontend-stammdatenverwaltung",
+    "connetions": [
+      {
+        "method": "POST",
+        "url": "/team-11-api/api/v1/users",
+        "description": "Create a new user",
+        "file": "src/utils/createuserfunction.ts",
+        "line": 10,
+        "confidence": "high",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      }
+    ],
+    "position": {
+      "x": 284,
+      "y": 517
+    }
+  },
+  {
+    "team": 12,
+    "type": "backend",
+    "reposiory": "team-12-backend-exagrad-lecturer-service",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/api/v1/courses/{courseId}",
+        "description": "Fetch course details from DataService",
+        "file": "src/main/java/com/ase/lecturerservice/services/BitfrostService.java",
+        "line": 40,
+        "confidence": "high",
+        "team": 50,
+        "service_name": "stammdaten-studieneinheiten"
+      },
+      {
+        "method": "GET",
+        "url": "/api/v1/exams/{examId}",
+        "description": "Fetch exam details from ExamService",
+        "file": "src/main/java/com/ase/lecturerservice/services/ExamService.java",
+        "line": 41,
+        "confidence": "high",
+        "team": 14,
+        "service_name": "exam-service"
+      },
+      {
+        "method": "GET",
+        "url": "/api/v1/exams/student/{studentId}",
+        "description": "Fetch student's exam details from ExamService",
+        "file": "src/main/java/com/ase/lecturerservice/services/ExamService.java",
+        "line": 54,
+        "confidence": "high",
+        "team": 14,
+        "service_name": "exam-service"
+      },
+      {
+        "method": "GET",
+        "url": "/api/v1/submissions/exam/{examId}/student/{studentId}",
+        "description": "Fetch submission details from SubmissionService",
+        "file": "src/main/java/com/ase/lecturerservice/services/SubmissionService.java",
+        "line": 39,
+        "confidence": "high",
+        "team": 13,
+        "service_name": "ase-exagrad-student-service"
+      },
+      {
+        "method": "",
+        "url": "/api/v1/notifications",
+        "description": "Send notification using NotificationService",
+        "file": "src/main/java/com/ase/lecturerservice/services/NotificationService.java",
+        "line": 38,
+        "confidence": "high",
+        "team": 15,
+        "service_name": "ase-notification-service"
+      },
+      {
+        "method": "GET",
+        "url": "/api/v1/students/{studentId}",
+        "description": "Fetch student details from StudentDetailsService",
+        "file": "src/main/java/com/ase/lecturerservice/services/StudentDetailsService.java",
+        "line": 39,
+        "confidence": "high",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 12,
+        "service_name": "grading-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 13,
+        "service_name": "ase-exagrad-student-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 9,
+        "service_name": "stammdaten-studieneinheiten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 14,
+        "service_name": "exam-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 15,
+        "service_name": "ase-notification-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 4,
+        "service_name": "minio"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 8,
+        "service_name": "userservice"
+      }
+    ],
+    "position": {
+      "x": 352,
+      "y": 82
+    }
+  },
+  {
+    "team": 12,
+    "type": "frontend",
+    "reposiory": "team-12-frontend-exagrad-lecturer-service",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/exa-grad/exam-service/exams",
+        "description": "Fetch exams",
+        "file": "src/hooks/useApi.ts",
+        "line": 14,
+        "confidence": "high",
+        "team": 12,
+        "service_name": "grading-service"
+      },
+      {
+        "method": "GET",
+        "url": "/exa-grad/exam-service/exams/:examId/submissions",
+        "description": "Fetch submissions for an exam",
+        "file": "src/hooks/useApi.ts",
+        "line": 14,
+        "confidence": "high",
+        "team": 12,
+        "service_name": "grading-service"
+      },
+      {
+        "method": "GET",
+        "url": "/exa-grad/exam-service/exams/:examId",
+        "description": "Fetch exam by id",
+        "file": "src/hooks/useApi.ts",
+        "line": 14,
+        "confidence": "high",
+        "team": 12,
+        "service_name": "grading-service"
+      },
+      {
+        "method": "GET",
+        "url": "/exa-grad/grading-service/feedback/:submissionId",
+        "description": "Fetch feedback for a submission",
+        "file": "src/hooks/useApi.ts",
+        "line": 14,
+        "confidence": "high",
+        "team": 12,
+        "service_name": "grading-service"
+      },
+      {
+        "method": "POST",
+        "url": "/exa-grad/grading-service/feedback",
+        "description": "Create feedback",
+        "file": "src/hooks/useApi.ts",
+        "line": 14,
+        "confidence": "high",
+        "team": 12,
+        "service_name": "grading-service"
+      },
+      {
+        "method": "PUT",
+        "url": "/exa-grad/grading-service/feedback/:feedbackId",
+        "description": "Update feedback",
+        "file": "src/hooks/useApi.ts",
+        "line": 14,
+        "confidence": "high",
+        "team": 12,
+        "service_name": "grading-service"
+      },
+      {
+        "method": "DELETE",
+        "url": "/exa-grad/grading-service/feedback/:feedbackId",
+        "description": "Delete feedback",
+        "file": "src/hooks/useApi.ts",
+        "line": 14,
+        "confidence": "high",
+        "team": 12,
+        "service_name": "grading-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 12,
+        "service_name": "grading-service"
+      }
+    ],
+    "position": {
+      "x": -4,
+      "y": 73
+    }
+  },
+  {
+    "team": 13,
+    "type": "backend",
+    "reposiory": "team-13-backend-exagrad-student-service",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/exa-grad/grading-service/api/v1/external/feedback/student",
+        "description": "Get all feedback for a student",
+        "file": "src/main/java/com/ase/exagrad/studentservice/service/external/FeedbackService.java",
+        "line": 56,
+        "confidence": "high",
+        "team": 12,
+        "service_name": "grading-service"
+      },
+      {
+        "method": "POST",
+        "url": "/notification-service/api/v1/notifications",
+        "description": "Send a notification about a document upload",
+        "file": "src/main/java/com/ase/exagrad/studentservice/service/NotificationService.java",
+        "line": 50,
+        "confidence": "high",
+        "team": 15,
+        "service_name": "ase-notification-service"
+      },
+      {
+        "method": "GET",
+        "url": "/api/masterdata/studies/external_connections/students/{studentId}/courses",
+        "description": "Fetch courses for a student",
+        "file": "src/main/java/com/ase/exagrad/studentservice/service/external/CourseExamService.java",
+        "line": 36,
+        "confidence": "high",
+        "team": 9,
+        "service_name": "stammdaten-studieneinheiten"
+      },
+      {
+        "method": "GET",
+        "url": "/exa-grad/exam-service/api/exams",
+        "description": "Fetch all exams",
+        "file": "src/main/java/com/ase/exagrad/studentservice/service/external/CourseExamService.java",
+        "line": 43,
+        "confidence": "high",
+        "team": 14,
+        "service_name": "exam-service"
+      },
+      {
+        "method": "GET",
+        "url": "/team-11-api/api/v1/users",
+        "description": "Fetch data for a student",
+        "file": "src/main/java/com/ase/exagrad/studentservice/service/external/StudentService.java",
+        "line": 22,
+        "confidence": "high",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": "POST",
+        "url": "/realms/sau/protocol/openid-connect/token",
+        "description": "Obtain an access token from Keycloak",
+        "file": "src/main/java/com/ase/exagrad/studentservice/service/external/KeycloakClient.java",
+        "line": 76,
+        "confidence": "high",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 12,
+        "service_name": "grading-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 13,
+        "service_name": "ase-exagrad-student-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 9,
+        "service_name": "stammdaten-studieneinheiten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 14,
+        "service_name": "exam-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 15,
+        "service_name": "ase-notification-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 8,
+        "service_name": "userservice"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 10,
+        "service_name": "keycloak"
+      }
+    ],
+    "position": {
+      "x": 338,
+      "y": -86
+    }
+  },
+  {
+    "team": 13,
+    "type": "frontend",
+    "reposiory": "team-13-frontend-exagrad-student-service",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/api/v1/exagrad/student/student-data",
+        "description": "Fetch student data",
+        "file": "src/hooks/useCombinedStudentData.ts",
+        "line": 14,
+        "confidence": "high",
+        "team": 13,
+        "service_name": "ase-exagrad-student-service"
+      },
+      {
+        "method": "GET",
+        "url": "/api/v1/exagrad/student/courses",
+        "description": "Fetch courses data",
+        "file": "src/hooks/useCombinedStudentData.ts",
+        "line": 15,
+        "confidence": "high",
+        "team": 13,
+        "service_name": "ase-exagrad-student-service"
+      },
+      {
+        "method": "GET",
+        "url": "/api/v1/exagrad/student/assessments",
+        "description": "Fetch assessments data",
+        "file": "src/hooks/useCombinedStudentData.ts",
+        "line": 16,
+        "confidence": "high",
+        "team": 13,
+        "service_name": "ase-exagrad-student-service"
+      },
+      {
+        "method": "GET",
+        "url": "/api/v1/exagrad/student/exam-documents",
+        "description": "Fetch exam documents",
+        "file": "src/hooks/useExamDocumentsApi.ts",
+        "line": 10,
+        "confidence": "high",
+        "team": 13,
+        "service_name": "ase-exagrad-student-service"
+      },
+      {
+        "method": "GET",
+        "url": "/api/v1/exagrad/student/exam-documents",
+        "description": "Fetch exam documents",
+        "file": "src/stores/slices/examDocumentsSlice.ts",
+        "line": 21,
+        "confidence": "high",
+        "team": 13,
+        "service_name": "ase-exagrad-student-service"
+      },
+      {
+        "method": "GET",
+        "url": "/api/v1/exagrad/student/lecturer-feedback",
+        "description": "Fetch lecturer feedback",
+        "file": "src/stores/slices/lecturerFeedbackSlice.ts",
+        "line": 21,
+        "confidence": "high",
+        "team": 13,
+        "service_name": "ase-exagrad-student-service"
+      },
+      {
+        "method": "GET",
+        "url": "/api/v1/exagrad/student/public-documents",
+        "description": "Fetch public documents",
+        "file": "src/hooks/usePubDocuments.ts",
+        "line": 11,
+        "confidence": "high",
+        "team": 13,
+        "service_name": "ase-exagrad-student-service"
+      },
+      {
+        "method": "POST",
+        "url": "/api/v1/exagrad/student/public-documents",
+        "description": "Upload public document",
+        "file": "src/components/Modals/PubUploadModal/PubUploadModal.tsx",
+        "line": 41,
+        "confidence": "high",
+        "team": 13,
+        "service_name": "ase-exagrad-student-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 13,
+        "service_name": "ase-exagrad-student-service"
+      }
+    ],
+    "position": {
+      "x": 14,
+      "y": -132
+    }
+  },
+  {
+    "team": 14,
+    "type": "backend",
+    "reposiory": "team-14-backend-examination-office",
+    "connetions": [
+      {
+        "method": "POST",
+        "url": "/api/v1/messages/publish/ase-14-examoffice/{topicName}",
+        "description": "Send message to a Bitfrost topic",
+        "file": "src/main/java/com/ase/userservice/services/BitfrostService.java",
+        "line": 29,
+        "confidence": "medium",
+        "team": 50,
+        "service_name": "bitfrost-service"
+      },
+      {
+        "method": "GET",
+        "url": "/exa-grad/grading-service/api/v1/feedback/for-lecturer/{lecturerUuid}",
+        "description": "Get feedback for a lecturer",
+        "file": "src/main/java/com/ase/userservice/services/FeedbackService.java",
+        "line": 44,
+        "confidence": "medium",
+        "team": 12,
+        "service_name": "grading-service"
+      },
+      {
+        "method": "GET",
+        "url": "/exa-grad/grading-service/api/v1/feedback/for-exam/{examUuid}",
+        "description": "Get feedback for an exam",
+        "file": "src/main/java/com/ase/userservice/services/FeedbackService.java",
+        "line": 50,
+        "confidence": "medium",
+        "team": 12,
+        "service_name": "grading-service"
+      },
+      {
+        "method": "POST",
+        "url": "/realms/sau/protocol/openid-connect/token",
+        "description": "Get Keycloak authentication token",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakService.java",
+        "line": 26,
+        "confidence": "high",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "GET",
+        "url": "/team-11-api/api/v1/group",
+        "description": "Get all study groups with details",
+        "file": "src/main/java/com/ase/userservice/services/StudentService.java",
+        "line": 40,
+        "confidence": "high",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": "GET",
+        "url": "/team-11-api/api/v1/group/{studyGroup}",
+        "description": "Get students by study group",
+        "file": "src/main/java/com/ase/userservice/services/StudentService.java",
+        "line": 70,
+        "confidence": "medium",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": "GET",
+        "url": "/team-11-api/api/v1/users/{studentId}",
+        "description": "Get student information",
+        "file": "src/main/java/com/ase/userservice/services/StudentService.java",
+        "line": 131,
+        "confidence": "medium",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 14,
+        "service_name": "exam-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 12,
+        "service_name": "grading-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 10,
+        "service_name": "keycloak"
+      }
+    ],
+    "position": {
+      "x": 385,
+      "y": -295
+    }
+  },
+  {
+    "team": 14,
+    "type": "frontend",
+    "reposiory": "team-14-frontend-examination-office",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/api/weather",
+        "description": "Fetch weather data",
+        "file": "src/stores/slices/weatherSlice.ts",
+        "line": 27,
+        "confidence": "high",
+        "team": null,
+        "service_name": ""
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 11,
+        "service_name": "userservice"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "confidence": "meh",
+        "team": 14,
+        "service_name": "exam-service"
+      }
+    ],
+    "position": {
+      "x": 8,
+      "y": -318
+    }
+  },
+  {
+    "team": 15,
+    "type": "backend",
+    "reposiory": "team-15-backend-notification-service-neu",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/userapi/api/users/me",
+        "description": "Fetch user profile",
+        "file": "src/main/java/com/ase/notificationservice/components/GetToken.java",
+        "line": 27,
+        "confidence": "high",
+        "team": 10,
+        "service_name": "user-api-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 15,
+        "service_name": "ase-notification-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 10,
+        "service_name": "keycloak"
+      }
+    ],
+    "position": {
+      "x": 582,
+      "y": -471
+    }
+  },
+  {
+    "team": 15,
+    "type": "frontend",
+    "reposiory": "team-15-frontend-notification-service-neu",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/notification-service/notifications",
+        "description": "Get notifications",
+        "file": "src/hooks/useApi.ts",
+        "line": 14,
+        "confidence": "medium",
+        "team": 15,
+        "service_name": "ase-notification-service"
+      },
+      {
+        "method": "POST",
+        "url": "/notification-service/notifications/mark-as-read/{notificationId}",
+        "description": "Mark notification as read",
+        "file": "src/hooks/useApi.ts",
+        "line": 28,
+        "confidence": "medium",
+        "team": 15,
+        "service_name": "ase-notification-service"
+      },
+      {
+        "method": "POST",
+        "url": "/notification-service/notifications/mark-as-unread/{notificationId}",
+        "description": "Mark notification as unread",
+        "file": "src/hooks/useApi.ts",
+        "line": 37,
+        "confidence": "medium",
+        "team": 15,
+        "service_name": "ase-notification-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 15,
+        "service_name": "ase-notification-service"
+      }
+    ],
+    "position": {
+      "x": 282,
+      "y": -507
+    }
+  },
+  {
+    "team": 2,
+    "type": "backend",
+    "reposiory": "team-2-backend-timetable_service",
+    "connetions": [
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 7,
+        "service_name": "dms"
+      }
+    ],
+    "position": {
+      "x": 1203,
+      "y": -538
+    }
+  },
+  {
+    "team": 2,
+    "type": "backend",
+    "reposiory": "team-2-backend-timetable_service_node",
+    "connetions": [
+      {
+        "method": "POST",
+        "url": "/auth/realms/sau/protocol/openid-connect/token",
+        "description": "Get Authentication Token",
+        "file": "helper/getAuthToken.js",
+        "line": 12,
+        "confidence": "low",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "GET",
+        "url": "/team-11-api/api/v1/users/{userID}",
+        "description": "Get user information",
+        "file": "helper/getUserInfo.js",
+        "line": 6,
+        "confidence": "high",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": "POST",
+        "url": "/userapi/v1/user",
+        "description": "Get lecturer by ID",
+        "file": "helper/resolveIds/lecturer.js",
+        "line": 13,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "user-api-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 2,
+        "service_name": "ase-timetable-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      }
+    ],
+    "position": {
+      "x": 1203,
+      "y": -538
+    }
+  },
+  {
+    "team": 2,
+    "type": "frontend",
+    "reposiory": "team-2-frontend-timetable_service",
+    "connetions": [
+      {
+        "method": "POST",
+        "url": "/api/timetable/v1/event/",
+        "description": "Create a new event",
+        "file": "src/api/createEvent.ts",
+        "line": 6,
+        "confidence": "high",
+        "team": 2,
+        "service_name": "ase-timetable-service"
+      },
+      {
+        "method": "PUT",
+        "url": "/api/timetable/v1/event/{id}",
+        "description": "Edit an existing event",
+        "file": "src/api/createEvent.ts",
+        "line": 28,
+        "confidence": "high",
+        "team": 2,
+        "service_name": "ase-timetable-service"
+      },
+      {
+        "method": "DELETE",
+        "url": "/api/timetable/v1/event/{id}",
+        "description": "Delete an event",
+        "file": "src/api/createEvent.ts",
+        "line": 49,
+        "confidence": "high",
+        "team": 2,
+        "service_name": "ase-timetable-service"
+      },
+      {
+        "method": "GET",
+        "url": "/api/timetable/v1/schedule/",
+        "description": "Get the schedule of events",
+        "file": "src/api/createEvent.ts",
+        "line": 75,
+        "confidence": "high",
+        "team": 2,
+        "service_name": "ase-timetable-service"
+      },
+      {
+        "method": "GET",
+        "url": "/team-11-api/api/v1/group",
+        "description": "Get all study groups",
+        "file": "src/api/getGroups.ts",
+        "line": 2,
+        "confidence": "high",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": "GET",
+        "url": "/team-11-api/api/v1/users",
+        "description": "Get all lecturers",
+        "file": "src/api/getLecturers.ts",
+        "line": 2,
+        "confidence": "high",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": "GET",
+        "url": "/api/masterdata/studies/modules/",
+        "description": "Get all modules",
+        "file": "src/api/getModules.ts",
+        "line": 2,
+        "confidence": "high",
+        "team": 9,
+        "service_name": "stammdaten-studieneinheiten"
+      },
+      {
+        "method": "GET",
+        "url": "/ase-1/room-mgmt/rooms",
+        "description": "Get all rooms",
+        "file": "src/api/getRooms.ts",
+        "line": 2,
+        "confidence": "high",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": "GET",
+        "url": "/current_weather",
+        "description": "Get current weather",
+        "file": "src/hooks/useApi.ts",
+        "line": 13,
+        "confidence": "high",
+        "team": null,
+        "service_name": ""
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 2,
+        "service_name": "ase-timetable-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 9,
+        "service_name": "stammdaten-studieneinheiten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 8,
+        "service_name": "userservice"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      }
+    ],
+    "position": {
+      "x": 978,
+      "y": -769
+    }
+  },
+  {
+    "team": 3,
+    "type": "backend",
+    "reposiory": "team-3-backend-parking-lot-analysis",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/team-11-api/api/v1/users",
+        "description": "Fetches employee data from the user management service.",
+        "file": "src/main/java/com/ase/parkingservice/services/ExternalApiService.java",
+        "line": 23,
+        "confidence": "high",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 3,
+        "service_name": "ase-parkingservice"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      }
+    ],
+    "position": {
+      "x": 1458,
+      "y": -423
+    }
+  },
+  {
+    "team": 3,
+    "type": "frontend",
+    "reposiory": "team-3-frontend-parking-lot-analysis",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/api/parkingservice/api/parkinglots",
+        "description": "Fetch parking lots",
+        "file": "src/pages/ParkingDashboard/ParkingDashboard.tsx",
+        "line": 20,
+        "confidence": "high",
+        "team": 3,
+        "service_name": "ase-parkingservice"
+      },
+      {
+        "method": "GET",
+        "url": "/api/parkingservice/api/parkinglots",
+        "description": "Fetch parking lots",
+        "file": "src/hooks/useApiForm.ts",
+        "line": 14,
+        "confidence": "high",
+        "team": 3,
+        "service_name": "ase-parkingservice"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 6,
+        "service_name": "ase-antrag-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 3,
+        "service_name": "ase-parkingservice"
+      }
+    ],
+    "position": {
+      "x": 1296,
+      "y": -696
+    }
+  },
+  {
+    "team": 4,
+    "type": "backend",
+    "reposiory": "team-4-backend-abstract-file-service",
+    "connetions": [
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 4,
+        "service_name": "minio"
+      }
+    ],
+    "position": {
+      "x": 1691,
+      "y": -279
+    }
+  },
+  {
+    "team": 4,
+    "type": null,
+    "reposiory": "team-4-minio-file-service",
+    "connetions": [],
+    "position": {
+      "x": 0,
+      "y": 2490
+    }
+  },
+  {
+    "team": 5,
+    "type": "backend",
+    "reposiory": "team-5-backend-newsfeed",
+    "connetions": [
+      {
+        "method": "POST",
+        "url": "/realms/sau/protocol/openid-connect/token",
+        "description": "Request JWT token for client credentials",
+        "file": "src/main/java/com/ase/newsfeedservice/services/EmailNotificationHelper.java",
+        "line": 70,
+        "confidence": "high",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "POST",
+        "url": "/notification-service/api/v1/notifications",
+        "description": "Send email notification about new news post",
+        "file": "src/main/java/com/ase/newsfeedservice/services/EmailNotificationHelper.java",
+        "line": 48,
+        "confidence": "high",
+        "team": 15,
+        "service_name": "ase-notification-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 5,
+        "service_name": "ase-newsfeed-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 15,
+        "service_name": "ase-notification-service"
+      }
+    ],
+    "position": {
+      "x": 1723,
+      "y": -83
+    }
+  },
+  {
+    "team": 5,
+    "type": "frontend",
+    "reposiory": "team-5-frontend-newsfeed",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/current_weather",
+        "description": "Get current weather",
+        "file": "src/hooks/useApi.ts",
+        "line": 12,
+        "confidence": "high",
+        "team": null,
+        "service_name": ""
+      },
+      {
+        "method": "POST",
+        "url": "/api/newsfeed",
+        "description": "Create a news post (mock)",
+        "file": "src/services/newsfeed.mock.ts",
+        "line": 11,
+        "confidence": "high",
+        "team": 5,
+        "service_name": "ase-5newsfeed-service"
+      },
+      {
+        "method": "GET",
+        "url": "/api/newsfeed",
+        "description": "Get news posts (mock)",
+        "file": "src/services/newsfeed.mock.ts",
+        "line": 15,
+        "confidence": "high",
+        "team": 5,
+        "service_name": "ase-5newsfeed-service"
+      },
+      {
+        "method": "PUT",
+        "url": "/api/newsfeed/{id}",
+        "description": "Update a news post (mock)",
+        "file": "src/services/newsfeed.mock.ts",
+        "line": 26,
+        "confidence": "high",
+        "team": 5,
+        "service_name": "ase-5newsfeed-service"
+      },
+      {
+        "method": "DELETE",
+        "url": "/api/newsfeed/{id}",
+        "description": "Delete a news post (mock)",
+        "file": "src/services/newsfeed.mock.ts",
+        "line": 32,
+        "confidence": "high",
+        "team": 5,
+        "service_name": "ase-5newsfeed-service"
+      },
+      {
+        "method": "GET",
+        "url": "/api/newsfeed/{id}/history",
+        "description": "Get news post history (mock)",
+        "file": "src/services/newsfeed.mock.ts",
+        "line": 36,
+        "confidence": "high",
+        "team": 5,
+        "service_name": "ase-5newsfeed-service"
+      },
+      {
+        "method": "POST",
+        "url": "/api/newsfeed",
+        "description": "Create a news post",
+        "file": "src/services/newsfeed.ts",
+        "line": 19,
+        "confidence": "high",
+        "team": 5,
+        "service_name": "ase-5newsfeed-service"
+      },
+      {
+        "method": "GET",
+        "url": "/api/newsfeed",
+        "description": "Get news posts",
+        "file": "src/services/newsfeed.ts",
+        "line": 27,
+        "confidence": "high",
+        "team": 5,
+        "service_name": "ase-5newsfeed-service"
+      },
+      {
+        "method": "PUT",
+        "url": "/api/newsfeed/{id}",
+        "description": "Update a news post",
+        "file": "src/services/newsfeed.ts",
+        "line": 44,
+        "confidence": "high",
+        "team": 5,
+        "service_name": "ase-5newsfeed-service"
+      },
+      {
+        "method": "DELETE",
+        "url": "/api/newsfeed/{id}",
+        "description": "Delete a news post",
+        "file": "src/services/newsfeed.ts",
+        "line": 53,
+        "confidence": "high",
+        "team": 5,
+        "service_name": "ase-5newsfeed-service"
+      },
+      {
+        "method": "GET",
+        "url": "/api/newsfeed/{id}/history",
+        "description": "Get news post history",
+        "file": "src/services/newsfeed.ts",
+        "line": 60,
+        "confidence": "high",
+        "team": 5,
+        "service_name": "ase-5newsfeed-service"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 5,
+        "service_name": "ase-newsfeed-service"
+      }
+    ],
+    "position": {
+      "x": 2062,
+      "y": -84
+    }
+  },
+  {
+    "team": 7,
+    "type": "backend",
+    "reposiory": "team-7-backend-dms",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/team-11-api/api/v1/users",
+        "description": "Fetch current user",
+        "file": "src/main/java/com/ase/dms/services/UserClientImpl.java",
+        "line": 32,
+        "confidence": "high",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 12,
+        "service_name": "minio"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      }
+    ],
+    "position": {
+      "x": 1462,
+      "y": 290
+    }
+  },
+  {
+    "team": 7,
+    "type": "frontend",
+    "reposiory": "team-7-frontend-dms",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/dms/v1/folders/{id}",
+        "description": "GET folders",
+        "file": "src/hooks/useDmsApi.ts",
+        "line": 47,
+        "confidence": "high",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": "GET",
+        "url": "/team-11-api/api/v1/group",
+        "description": "GET study groups (cohorts)",
+        "file": "src/hooks/useDmsApi.ts",
+        "line": 60,
+        "confidence": "high",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": "PATCH",
+        "url": "/dms/v1/documents/{id}",
+        "description": "PATCH document to rename a document",
+        "file": "src/hooks/useDmsApi.ts",
+        "line": 77,
+        "confidence": "high",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": "PATCH",
+        "url": "/dms/v1/folders/{id}",
+        "description": "PATCH folder to rename a folder",
+        "file": "src/hooks/useDmsApi.ts",
+        "line": 88,
+        "confidence": "high",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": "DELETE",
+        "url": "/dms/v1/documents/{id}",
+        "description": "DELETE document",
+        "file": "src/hooks/useDmsApi.ts",
+        "line": 10,
+        "confidence": "high",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": "DELETE",
+        "url": "/dms/v1/folders/{id}",
+        "description": "DELETE folder",
+        "file": "src/hooks/useDmsApi.ts",
+        "line": 107,
+        "confidence": "high",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": "POST",
+        "url": "/dms/v1/documents",
+        "description": "POST document to upload a document",
+        "file": "src/hooks/useDmsApi.ts",
+        "line": 118,
+        "confidence": "high",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": "GET",
+        "url": "/dms/v1/documents/{id}/download",
+        "description": "GET document/download to download a document",
+        "file": "src/hooks/useDmsApi.ts",
+        "line": 129,
+        "confidence": "high",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": "POST",
+        "url": "/dms/v1/folders",
+        "description": "Create a new folder",
+        "file": "src/hooks/useDmsApi.ts",
+        "line": 210,
+        "confidence": "high",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": "PATCH",
+        "url": "/dms/v1/folders/{id}",
+        "description": "Update folder study groups",
+        "file": "src/hooks/useDmsApi.ts",
+        "line": 222,
+        "confidence": "high",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": "PATCH",
+        "url": "/dms/v1/documents/{id}",
+        "description": "Move a document to a different folder",
+        "file": "src/hooks/useDmsApi.ts",
+        "line": 234,
+        "confidence": "high",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": "PATCH",
+        "url": "/dms/v1/folders/{id}",
+        "description": "Move a folder to a different parent folder",
+        "file": "src/hooks/useDmsApi.ts",
+        "line": 246,
+        "confidence": "high",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": "GET",
+        "url": "/dms/v1/documents/{id}/pdfconverter",
+        "description": "Convert an office document to PDF",
+        "file": "src/hooks/useDmsApi.ts",
+        "line": 258,
+        "confidence": "high",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": "GET",
+        "url": "/dms/v1/tags",
+        "description": "GET all tags",
+        "file": "src/hooks/useDmsApi.ts",
+        "line": 275,
+        "confidence": "high",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": "POST",
+        "url": "/dms/v1/tags/{tagName}",
+        "description": "POST create a new tag",
+        "file": "src/hooks/useDmsApi.ts",
+        "line": 284,
+        "confidence": "high",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": "PUT",
+        "url": "/dms/v1/tags/{tagUuid}",
+        "description": "PUT update a tag",
+        "file": "src/hooks/useDmsApi.ts",
+        "line": 295,
+        "confidence": "high",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": "DELETE",
+        "url": "/dms/v1/tags/{tagUuid}",
+        "description": "DELETE a tag",
+        "file": "src/hooks/useDmsApi.ts",
+        "line": 310,
+        "confidence": "high",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": "PUT",
+        "url": "/dms/v1/documents/{id}/tags",
+        "description": "PUT document tags",
+        "file": "src/hooks/useDmsApi.ts",
+        "line": 318,
+        "confidence": "high",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      }
+    ],
+    "position": {
+      "x": 1748,
+      "y": 435
+    }
+  },
+  {
+    "team": 9,
+    "type": "backend",
+    "reposiory": "team-9-backend-stammdaten-studieneinheiten",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/team-11-api/api/v1/users",
+        "description": "Fetch users by type with details",
+        "file": "app/api/outside_connections.py",
+        "line": 27,
+        "confidence": "high",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": "GET",
+        "url": "/team-11-api/api/v1/users",
+        "description": "Fetch all users",
+        "file": "app/api/outside_connections.py",
+        "line": 33,
+        "confidence": "high",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 9,
+        "service_name": "stammdaten-studieneinheiten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 8,
+        "service_name": "userservice"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 7,
+        "service_name": "dms"
+      }
+    ],
+    "position": {
+      "x": 935,
+      "y": 450
+    }
+  },
+  {
+    "team": 9,
+    "type": "frontend",
+    "reposiory": "team-9-frontend-stammdaten-studieneinheiten",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/api/weather",
+        "description": "Fetch weather data",
+        "file": "src/pages/Weather/Weather.tsx",
+        "line": 11,
+        "confidence": "high",
+        "team": 100,
+        "service_name": ""
+      },
+      {
+        "method": "GET",
+        "url": "/api/masterdata/studies",
+        "description": "Fetch course of studies",
+        "file": "src/hooks/useApi.ts",
+        "line": 14,
+        "confidence": "high",
+        "team": 9,
+        "service_name": "stammdaten-studieneinheiten"
+      },
+      {
+        "method": "GET",
+        "url": "/api/masterdata/studies",
+        "description": "Fetch course of studies",
+        "file": "src/pages/ShowCoursesOfStudy/ShowCoursesOfStudy.tsx",
+        "line": 20,
+        "confidence": "high",
+        "team": 9,
+        "service_name": "stammdaten-studieneinheiten"
+      },
+      {
+        "method": "GET",
+        "url": "/api/masterdata/studies",
+        "description": "Fetch course of studies",
+        "file": "src/pages/EditCourseOfStudies/EditCourseOfStudies.tsx",
+        "line": 21,
+        "confidence": "high",
+        "team": 9,
+        "service_name": "stammdaten-studieneinheiten"
+      },
+      {
+        "method": "GET",
+        "url": "/api/masterdata/studies",
+        "description": "Fetch course of studies",
+        "file": "src/pages/CreateCourseOfStudiesInstance/CreateCourseOfStudiesInstance.tsx",
+        "line": 18,
+        "confidence": "high",
+        "team": 9,
+        "service_name": "stammdaten-studieneinheiten"
+      },
+      {
+        "method": "GET",
+        "url": "/api/masterdata/studies",
+        "description": "Fetch course of studies",
+        "file": "src/pages/ShowDetailedCourseOfStudy/ShowDetailedCourseOfStudy.tsx",
+        "line": 20,
+        "confidence": "high",
+        "team": 9,
+        "service_name": "stammdaten-studieneinheiten"
+      },
+      {
+        "method": "GET",
+        "url": "/api/masterdata/studies",
+        "description": "Fetch course of studies",
+        "file": "src/components/SemesterSplitTable/SemesterSplitTable.tsx",
+        "line": 30,
+        "confidence": "high",
+        "team": 9,
+        "service_name": "stammdaten-studieneinheiten"
+      },
+      {
+        "method": "GET",
+        "url": "/api/masterdata/studies",
+        "description": "Fetch course of studies",
+        "file": "src/pages/ShowSingleCourseOfStudy/ShowSingleCourseOfStudy.tsx",
+        "line": 19,
+        "confidence": "high",
+        "team": 9,
+        "service_name": "stammdaten-studieneinheiten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 9,
+        "service_name": "stammdaten-studieneinheiten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 8,
+        "service_name": "userservice"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 12,
+        "service_name": "minio"
+      }
+    ],
+    "position": {
+      "x": 914,
+      "y": 693
+    }
+  },
+  {
+    "team": 1,
+    "type": "backend",
+    "reposiory": "team01-backend-room-management",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/team-11-api/api/v1/group/{name}",
+        "description": "Fetch student group by name",
+        "file": "src/main/java/dev/playo/room/student/StudentGroupClient.java",
+        "line": 27,
+        "confidence": "high",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 1,
+        "service_name": "room-mgmt"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 11,
+        "service_name": "ase-stammdaten"
+      }
+    ],
+    "position": {
+      "x": 896,
+      "y": -587
+    }
+  },
+  {
+    "team": 8,
+    "type": "backend",
+    "reposiory": "team8backend",
+    "connetions": [
+      {
+        "method": "GET",
+        "url": "/admin/realms/sau/groups/{parentId}/children",
+        "description": "Fetch child groups of a parent group",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakGroupService.java",
+        "line": 331,
+        "confidence": "high",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "POST",
+        "url": "/realms/sau/protocol/openid-connect/token",
+        "description": "Get admin access token",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakAdminTokenService.java",
+        "line": 21,
+        "confidence": "high",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "GET",
+        "url": "/admin/realms/sau/groups",
+        "description": "List all groups",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakGroupService.java",
+        "line": 88,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "GET",
+        "url": "/admin/realms/sau/groups/{groupId}",
+        "description": "Find group by id",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakGroupService.java",
+        "line": 94,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "POST",
+        "url": "/admin/realms/sau/groups",
+        "description": "Create a new group",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakGroupService.java",
+        "line": 117,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "POST",
+        "url": "/admin/realms/sau/groups/{parentGroupId}/children",
+        "description": "Create a new child group",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakGroupService.java",
+        "line": 141,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "POST",
+        "url": "/admin/realms/sau/groups/{groupId}/role-mappings/realm",
+        "description": "Add realm roles to a group",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakGroupService.java",
+        "line": 148,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "PUT",
+        "url": "/admin/realms/sau/groups/{groupId}",
+        "description": "Update a group",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakGroupService.java",
+        "line": 180,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "DELETE",
+        "url": "/admin/realms/sau/groups/{groupId}",
+        "description": "Delete a group",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakGroupService.java",
+        "line": 184,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "GET",
+        "url": "/admin/realms/sau/groups/{groupId}/role-mappings/realm",
+        "description": "List realm roles of a group",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakGroupService.java",
+        "line": 190,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "GET",
+        "url": "/admin/realms/sau/roles-by-id/{roleId}",
+        "description": "Get role by id",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakGroupService.java",
+        "line": 196,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "DELETE",
+        "url": "/admin/realms/sau/groups/{groupId}/role-mappings/realm",
+        "description": "Remove realm roles from a group",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakGroupService.java",
+        "line": 204,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "GET",
+        "url": "/admin/realms/sau/groups/{groupId}/members",
+        "description": "Get group members",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakGroupService.java",
+        "line": 211,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "PUT",
+        "url": "/admin/realms/sau/users/{userId}/groups/{groupId}",
+        "description": "Add user to a group",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakGroupService.java",
+        "line": 218,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "DELETE",
+        "url": "/admin/realms/sau/users/{userId}/groups/{groupId}",
+        "description": "Remove user from a group",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakGroupService.java",
+        "line": 224,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "GET",
+        "url": "/admin/realms/sau/users",
+        "description": "Search for users",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakGroupService.java",
+        "line": 235,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "GET",
+        "url": "/admin/realms/sau/users/{userId}",
+        "description": "Get user by id",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakGroupService.java",
+        "line": 240,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "GET",
+        "url": "/admin/realms/sau/users/{userId}/role-mappings/realm",
+        "description": "Get user's realm roles",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakGroupService.java",
+        "line": 246,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "GET",
+        "url": "/admin/realms/sau/users/{userId}/groups",
+        "description": "Get user's groups",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakGroupService.java",
+        "line": 250,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "GET",
+        "url": "/admin/realms/sau/roles",
+        "description": "List all roles",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakRoleService.java",
+        "line": 33,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "GET",
+        "url": "/admin/realms/sau/roles/{roleName}/users",
+        "description": "Get users with a specific role",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakRoleService.java",
+        "line": 35,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "GET",
+        "url": "/admin/realms/sau/roles-by-id/{roleId}/composites",
+        "description": "Get role composites",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakRoleService.java",
+        "line": 45,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "POST",
+        "url": "/admin/realms/sau/roles",
+        "description": "Create a new role",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakRoleService.java",
+        "line": 86,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "PUT",
+        "url": "/admin/realms/sau/roles-by-id/{roleId}",
+        "description": "Update a role",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakRoleService.java",
+        "line": 92,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "POST",
+        "url": "/admin/realms/sau/roles-by-id/{roleId}/composites",
+        "description": "Add composite roles to a role",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakRoleService.java",
+        "line": 97,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "DELETE",
+        "url": "/admin/realms/sau/roles-by-id/{roleId}/composites",
+        "description": "Remove composite roles from a role",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakRoleService.java",
+        "line": 102,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "POST",
+        "url": "/admin/realms/sau/users/{userId}/role-mappings/realm",
+        "description": "Add realm role to a user",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakRoleService.java",
+        "line": 115,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "DELETE",
+        "url": "/admin/realms/sau/users/{userId}/role-mappings/realm",
+        "description": "Remove realm role from a user",
+        "file": "src/main/java/com/ase/userservice/services/KeycloakRoleService.java",
+        "line": 123,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "GET",
+        "url": "/admin/realms/sau/roles/{roleName}",
+        "description": "Get role by name",
+        "file": "src/main/java/com/ase/userservice/services/GroupRoleService.java",
+        "line": 35,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": "GET",
+        "url": "/admin/realms/sau/roles/{roleName}/composites",
+        "description": "Get role composites",
+        "file": "src/main/java/com/ase/userservice/services/RoleQueryService.java",
+        "line": 138,
+        "confidence": "medium",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 10,
+        "service_name": "keycloak"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 8,
+        "service_name": "userservice"
+      }
+    ],
+    "position": {
+      "x": 1215,
+      "y": 426
+    }
+  },
+  {
+    "team": 8,
+    "type": "frontend",
+    "reposiory": "team8frontend",
+    "connetions": [
+      {
+        "method": "POST",
+        "url": "/api/masterdata/group/user",
+        "description": "Add user to group",
+        "file": "src/group-users/AddUserToGroupDialog.tsx",
+        "line": 41,
+        "confidence": "high",
+        "team": 8,
+        "service_name": "userservice"
+      },
+      {
+        "method": "DELETE",
+        "url": "/api/masterdata/group/user",
+        "description": "Remove user from group",
+        "file": "src/group-users/GroupUserList.tsx",
+        "line": 62,
+        "confidence": "high",
+        "team": 8,
+        "service_name": "userservice"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 7,
+        "service_name": "dms"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 8,
+        "service_name": "userservice"
+      },
+      {
+        "method": null,
+        "url": null,
+        "description": null,
+        "file": null,
+        "line": null,
+        "confidence": "meh",
+        "team": 12,
+        "service_name": "minio"
+      }
+    ],
+    "position": {
+      "x": 1308,
+      "y": 631
+    }
+  }
+]

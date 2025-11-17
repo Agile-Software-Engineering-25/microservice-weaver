@@ -1,39 +1,32 @@
-import { useCallback, useEffect, useState, useMemo } from 'react';
-import ReactFlow, {
-  MiniMap,
-  Controls,
-  Background,
-  useNodesState,
-  useEdgesState,
-  BackgroundVariant,
-} from 'reactflow';
+import {useCallback, useEffect, useMemo, useState} from 'react';
+import ReactFlow, {Background, BackgroundVariant, Controls, MiniMap, useEdgesState, useNodesState,} from 'reactflow';
 import 'reactflow/dist/style.css';
-import { Service } from '@/types/service';
+import {Service} from '@/types/service';
 import CustomServiceNode from '@/components/CustomServiceNode';
-import { createNodesAndEdges } from '@/utils/flowUtils';
-import { getLayoutedElements } from '@/utils/layoutUtils';
+import {createNodesAndEdges} from '@/utils/flowUtils';
+import {getLayoutedElements} from '@/utils/layoutUtils';
 
 interface ServiceFlowCanvasProps {
   services: Service[];
 }
 
-const ServiceFlowCanvas = ({ services }: ServiceFlowCanvasProps) => {
-  const nodeTypes = useMemo(() => ({ custom: CustomServiceNode }), []);
+const ServiceFlowCanvas = ({services}: ServiceFlowCanvasProps) => {
+  const nodeTypes = useMemo(() => ({custom: CustomServiceNode}), []);
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
 
   useEffect(() => {
     if (services.length > 0) {
-      const { nodes: initialNodes, edges: initialEdges } = createNodesAndEdges(services);
-      
+      const {nodes: initialNodes, edges: initialEdges} = createNodesAndEdges(services);
+
       // Only apply dagre layout if no positions are predefined
       const hasPositions = services.some(s => s.position);
       if (hasPositions) {
         setNodes(initialNodes);
         setEdges(initialEdges);
       } else {
-        const { nodes: layoutedNodes, edges: layoutedEdges } = getLayoutedElements(
+        const {nodes: layoutedNodes, edges: layoutedEdges} = getLayoutedElements(
           initialNodes,
           initialEdges
         );
@@ -81,12 +74,12 @@ const ServiceFlowCanvas = ({ services }: ServiceFlowCanvasProps) => {
 
   const handleNodesChange = useCallback((changes: any) => {
     onNodesChange(changes);
-    
+
     // Check if any change is a position change (drag end)
-    const hasPositionChange = changes.some((change: any) => 
+    const hasPositionChange = changes.some((change: any) =>
       change.type === 'position' && change.dragging === false
     );
-    
+
     if (hasPositionChange) {
       // Get current nodes after the change
       setNodes((currentNodes) => {
@@ -94,7 +87,7 @@ const ServiceFlowCanvas = ({ services }: ServiceFlowCanvasProps) => {
         const updatedServices = services.map(service => {
           const nodeId = `${service.team}-${service.type || 'null'}`;
           const node = currentNodes.find(n => n.id === nodeId);
-          
+
           if (node) {
             return {
               ...service,
@@ -106,10 +99,10 @@ const ServiceFlowCanvas = ({ services }: ServiceFlowCanvasProps) => {
           }
           return service;
         });
-        
+
         console.log('Updated Services JSON with positions:');
         console.log(JSON.stringify(updatedServices, null, 2));
-        
+
         return currentNodes;
       });
     }
@@ -127,9 +120,9 @@ const ServiceFlowCanvas = ({ services }: ServiceFlowCanvasProps) => {
         fitView
         attributionPosition="bottom-left"
       >
-        <Background variant={BackgroundVariant.Dots} gap={16} size={1} color="hsl(var(--border))" />
-        <Controls className="bg-card border-border" />
-        <MiniMap 
+        <Background variant={BackgroundVariant.Dots} gap={16} size={1} color="hsl(var(--border))"/>
+        <Controls className="bg-card border-border"/>
+        <MiniMap
           nodeColor={(node) => {
             const style = node.style as any;
             return style?.background || 'hsl(var(--muted))';
