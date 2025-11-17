@@ -52,17 +52,8 @@ export const createNodesAndEdges = (services: Service[]) => {
           id: `e${service.team}-${service.type}-${connection.team}-${index}`,
           source: `${service.team}-${service.type || 'null'}`,
           target: targetId,
-          label: `${connection.method}: ${connection.description}`,
           animated: true,
           style: { stroke: 'hsl(var(--primary))', strokeWidth: 2 },
-          labelStyle: { 
-            fill: 'hsl(var(--foreground))', 
-            fontSize: 10,
-          },
-          labelBgStyle: { 
-            fill: 'hsl(var(--card))', 
-            fillOpacity: 0.9,
-          },
         });
       }
     });
